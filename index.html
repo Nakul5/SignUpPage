@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tech World</title>
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    /* CSS reset */
+    body {
+        font-family: 'Balsamiq Sans', cursive;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+        background: url('pics/key.jpg');
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 200px;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 19px;
+        font-size: 26px;
+    }
+
+    .mid {
+        display: block;
+        width: 38%;
+        margin: 20px auto;
+        /* border: 2px solid green;
+        border-radius: 20px; */
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 34px;
+        top: 30px;
+
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: Black;
+        text-decoration: none;
+        padding: 34px 23px;
+        font-weight: 1000;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        font-family: 'Balsamiq Sans', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(37, 36, 36);
+    }
+
+    .container {
+        
+        border: 2px solid white;
+        margin: 131px 56px;
+        padding: 50px 39px;
+        width: 40%;
+        display: block;
+        border-radius: 36px;
+        color: rgb(107, 240, 195);
+    }
+    .form-group input{
+        font-family: 'Balsamiq Sans', cursive;
+        text-align: center;
+        display: block;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 390px;
+        padding: 3px;
+        margin: 4px auto;
+        font-size:25px ;
+    }
+    .container button{
+        display: block;
+        width: 395px;
+        margin: 18px auto;
+    }
+    .container h1{
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="pics/logo1.png" alt="">
+            <div>The Tech World</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Contact us</a> </li>
+                <li> <a href="#">Updates</a> </li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us</button><button class="btn">E-Mail us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join us quickly</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your E-mail">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Password">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Phone number ">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
